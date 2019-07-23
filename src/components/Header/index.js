@@ -1,16 +1,28 @@
 import React from 'react';
-
-import { PageHeader, Menu } from 'antd';
+import { Menu, Icon } from 'antd';
+import { StyledHeader } from './styles';
 
 const Header = () => (
-  <PageHeader>
-    <Menu theme="dark" mode="horizontal" style={{ lineHeight: '50px' }}>
-      <Menu.Item key="1">Home</Menu.Item>
-      <Menu.Item key="2">Citizen</Menu.Item>
-      <Menu.Item key="3">Sign In</Menu.Item>
-      <Menu.Item key="4">About</Menu.Item>
+  <StyledHeader>
+    <Menu theme="light" mode="horizontal">
+      <Menu.Item key="1">
+        <Icon type="home" />
+        Home
+      </Menu.Item>
+      <Menu.Item key="2">
+        <Icon type="user" />
+        Citizen
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Icon type="login" />
+        Sign In
+      </Menu.Item>
+      <Menu.Item key="4">
+        <Icon type="info-circle" />
+        About
+      </Menu.Item>
     </Menu>
-  </PageHeader>
+  </StyledHeader>
 );
 
 export default Header;

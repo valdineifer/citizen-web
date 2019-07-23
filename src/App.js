@@ -1,18 +1,23 @@
 import React from 'react';
-import './App.css';
+import 'antd/dist/antd.css';
 import { Layout } from 'antd';
-import Header from './components/Header';
 import Routes from './routes';
+import Header from './components/Header';
 import Footer from './components/Footer';
+import { Container, AppContainer } from './styles';
 
 const App = () => (
-  <div className="App">
+  <AppContainer className="App">
     <Layout>
       <Header />
-      <Routes />
+
+      <Container>
+        <Routes />
+      </Container>
+
       <Footer />
     </Layout>
-  </div>
+  </AppContainer>
 );
 
 export default App;
