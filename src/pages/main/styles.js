@@ -13,8 +13,18 @@ export const ContentHeader = styled.section`
   padding: 100px 10%;
 `;
 
-export const Section = styled.section`
-  padding: 20px 0;
+export const Container = styled.section`
+  padding: 50px 0;
   background: #d3adf7;
-  text-align: ${props => (props.textCenter ? 'center' : 'left')};
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* flex: 1 0 auto; */
+
+  .ant-typography {
+    margin-top: 10px;
+    font-weight: lighter;
+  }
 `;

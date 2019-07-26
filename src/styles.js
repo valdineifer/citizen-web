@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   flex: 1 0 auto;
   background-color: #d3adf7;
-  height: calc(100vh - 127px);
+  height: calc(100vh - 183px);
 `;
 
 export const AppContainer = styled.div`

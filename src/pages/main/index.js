@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Typography } from 'antd';
-import { Content, ContentHeader, Section } from './styles';
+import { Content, ContentHeader, Container } from './styles';
 
 const { Title } = Typography;
 
@@ -11,12 +11,13 @@ const Main = () => (
       <Title>Citizen System</Title>
       <Title level={3}>This is an database of our citizen</Title>
     </ContentHeader>
-    <Section textCenter>
+    <Container>
       <Link to="/citizen/">
-        <Button type="primary">Click Here</Button>
-        <Title level={4}>to visit our Database</Title>
+        <Button size="large" type="primary" shape="rounded">Click Here</Button>
       </Link>
-    </Section>
+      {' '}
+      <Title level={2}>to visit our Database</Title>
+    </Container>
   </Content>
 );
 
