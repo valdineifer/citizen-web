@@ -13,7 +13,7 @@ const Main = () => (
     </ContentHeader>
     <Container>
       <Link to="/citizen/">
-        <Button size="large" type="primary" shape="rounded">Click Here</Button>
+        <Button size="large" type="primary" shape="round">Click Here</Button>
       </Link>
       {' '}
       <Title level={2}>to visit our Database</Title>

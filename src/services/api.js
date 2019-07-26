@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.API_URL,
+  baseURL: 'https://vf-citizen-api.herokuapp.com/api',
 });
 
 export default api;

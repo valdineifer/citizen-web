@@ -1,17 +1,22 @@
 import React from 'react';
 import { Menu, Icon } from 'antd';
+import { Link } from 'react-router-dom';
 import { StyledHeader } from './styles';
 
 const Header = () => (
   <StyledHeader>
     <Menu theme="light" mode="horizontal">
       <Menu.Item key="1">
-        <Icon type="home" />
-        Home
+        <Link to="/">
+          <Icon type="home" />
+          Home
+        </Link>
       </Menu.Item>
       <Menu.Item key="2">
-        <Icon type="user" />
+        <Link to="/citizen/">
+          <Icon type="user" />
         Citizen
+        </Link>
       </Menu.Item>
       <Menu.Item key="3">
         <Icon type="login" />
