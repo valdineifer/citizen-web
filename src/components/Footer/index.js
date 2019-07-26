@@ -6,7 +6,13 @@ const { Title } = Typography;
 
 const Footer = () => (
   <PgFooter>
-    <Title level={4}>Made with ❤ by Valdinei Ferreira</Title>
+    <Title level={4}>
+      Made with
+      {' '}
+      <span>❤</span>
+      {' '}
+      by Valdinei Ferreira
+    </Title>
     <div>
       <Icon type="github" />
       {' '}

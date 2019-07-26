@@ -11,4 +11,8 @@ export const PgFooter = styled.footer`
     width: 2em !important;
     height: 2em !important;
   }
+
+  span {
+    color: purple;
+  }
 `;
